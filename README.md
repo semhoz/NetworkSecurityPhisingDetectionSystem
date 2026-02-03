@@ -1,29 +1,11 @@
 ### Network Security Projects For Phising Data
 
-Setup github secrets:
-AWS_ACCESS_KEY_ID=<your_aws_access_key>
 
-AWS_SECRET_ACCESS_KEY=<your_aws_secret_key>
-
-AWS_REGION = us-east-1
-
-AWS_ECR_LOGIN_URI = <your_account_id>.dkr.ecr.us-east-1.amazonaws.com/networkssecurity
-ECR_REPOSITORY_NAME = networkssecurity
+An end-to-end MLOps pipeline for real-time phishing URL detection with automated training, drift monitoring, and cloud-native deployment.
 
 
-Docker Setup In EC2 commands to be Executed
-#optinal
+## 📖 Overview
 
-sudo apt-get update -y
+**NetworkSecurity** is a production-grade machine learning system designed to protect users from phishing attacks by classifying URLs as **malicious** or **legitimate**. The system analyzes **30 engineered features** extracted from URLs and leverages ensemble learning to achieve high-accuracy predictions.
 
-sudo apt-get upgrade
 
-#required
-
-curl -fsSL https://get.docker.com -o get-docker.sh
-
-sudo sh get-docker.sh
-
-sudo usermod -aG docker ubuntu
-
-newgrp docker
